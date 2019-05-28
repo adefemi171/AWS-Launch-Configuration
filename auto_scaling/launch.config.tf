@@ -5,8 +5,8 @@ provider "aws" {
 
 resource "aws_launch_template" "new-template"{
   name_prefix = "new-template"
-  image_id = "${var.image_id}"
-  instance_type = "${var.instance_type}"
+  image_id = "ami-2757f631"
+  instance_type = "t2.micro"
 
 }
 
